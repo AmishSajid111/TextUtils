@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-
+import '../Components/TextForm.css'
 export default function TextForm (props) {
   const handleUpClick=()=>
   {
@@ -51,13 +51,14 @@ export default function TextForm (props) {
  color: props.mode ==='dark'?'white' : '#042743' }}  id="myBox" rows="8"   ></textarea>
    </div>
    
-   
+   <div className="buttons">
    <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to uppercase</button>
    <button className="btn btn-primary" onClick={handleLowClick}>Convert to Lowercase</button>
    <button className="btn btn-primary mx-2" onClick={handleistClick}>1st char in uppercase</button>
    
    <button className="btn btn-primary mx-2" onClick={handleclearClick}>Clear text</button>
    <button className="btn btn-primary mx-2" onClick={handleCopyClick}>Copy text</button>
+   </div>
     </div>
     <div className="container my-2" style={{color: props.mode ==='dark'?'white' : '#042743' }}>
       <h2> Your text Summary</h2>

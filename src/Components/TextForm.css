@@ -1,0 +1,21 @@
+
+@media screen  and (max-width:450px){
+    .buttons{
+         display: flex;
+         flex-direction: column;
+        
+         flex-wrap: wrap;
+         padding: 12px;
+       
+         padding-bottom: 10px;
+    }  
+    .btn{
+        margin: 10px;
+    } 
+}
+@media screen  and (max-width:992px){
+   
+    .btn{
+        margin: 10px;
+    } 
+}
